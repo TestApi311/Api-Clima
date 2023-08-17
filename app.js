@@ -25,3 +25,7 @@ app.post('/login', function (req, res) {
 
     return res.status(400).json({ "Status": "error" });
 });
+
+app.get('/test', function (req, res) {
+    res.send('Conexión exitosa');
+});
